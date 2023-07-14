@@ -1,0 +1,56 @@
+1)Write a function that takes two numbers as arguments and returns their sum.
+def Addition(x,y):
+  return(x+y)
+
+2)Write a function that takes a list of numbers as an argument and returns the sum of those numbers.
+def ListAddition(*nums):
+  y=0
+  for num in nums:
+    y=y+num
+  return(y)
+
+3) Write a function that takes a string as an argument and returns the length of that string.
+y=[]
+def wordcount(*words):
+  for word in words:
+    y.append(len(word))
+  return(y)  
+
+4) Write a function that takes a list of strings as an argument and returns the length of the longest string in the list.
+def maxword(*words):
+  z=0
+  max=len(words[0])
+  for word in words:
+    if(len(word)>max):
+      z=words.index(word)
+  return(len(words[z]))
+
+5)Write a function that takes a list of numbers as an argument and returns the average of those numbers.
+def average(*nums):
+  x=len(nums)
+  y=0
+  for num in nums:
+    y=y+num
+  return(y/x) 
+  
+6) Write a function that takes a string as an argument and returns True if the string is a palindrome (reads the same forwards and backwards) and False otherwise.
+def palindrome(string):
+  if string[:]== string[::-1]:
+    print("palindrome")
+  else:
+    print("Not palindrome") 
+
+7) Write a function that takes a list of numbers as an argument and returns a new list containing only the even numbers from the original list.
+def even(*nums):
+  EVnum=[]
+  for num in nums:
+    if num%2==0:
+      EVnum.append(num)
+  return(EVnum)  
+
+8) Write a function that takes a list of numbers as an argument and returns a new list containing the squares of those numbers.
+def sqr(*nums):
+  SQRnum=[]
+  for num in nums:
+    SQRnum.append(num**2)
+  return(SQRnum) 
